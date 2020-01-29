@@ -43,6 +43,8 @@
         text-decoration: none;
         color: black;
         width: 100%; }
+      #core #navMenu nav .navItem:hover {
+        font-weight: bolder; }
       #core #navMenu nav hr {
         width: 90%;
         color: black; }
@@ -72,3 +74,8 @@
             margin: 0; }
           #core #bodyInt #content #postBox .postDiv h6 {
             margin: 0; }
+      #core #bodyInt #content #map {
+        display: flex;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto; }

@@ -2,8 +2,7 @@ let box = pullID("postBox");
 
 let generateNews = (item, index) => {
     if(index < 5){
-        console.log(item);
-        $d(box,"postDiv","post" + index.toString());
+        $d(box,"postDiv","post" + index.toString());        
         let post = pullID("post" + index.toString());
         $h(4, post, item.title,"","");
         $h(6,post,item.author,"postAuthor","");
@@ -14,6 +13,7 @@ let generateNews = (item, index) => {
         return 0;
     }
 }
+
 
 
 

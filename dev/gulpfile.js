@@ -16,6 +16,7 @@ gulp.task('dev', function () {
     gulp.watch("../dev/script/*.js", gulp.series('scriptify'));
     gulp.watch("*.html").on('change', browserSync.reload);
     gulp.watch("../public/app/*").on('change', browserSync.reload);
+    gulp.watch("../public/posts.js").on('change', browserSync.reload);
 });
 
 gulp.task('sass', function () {

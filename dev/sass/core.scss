@@ -52,6 +52,9 @@
                 color: black;
                 width: 100%;
             }
+            .navItem:hover{
+                font-weight: bolder;
+            }
             hr{
                 width: 90%;
                 color: black;
@@ -92,6 +95,12 @@
                         margin:0;
                     }
                 }
+            }
+            #map{
+                display: flex;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
 

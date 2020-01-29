@@ -7,7 +7,7 @@ let version = "Alpha-1.0.1 - UIP Mod";
 
 console.log("SolomonJS v" + version + " loaded.");
 
-// Generics
+// Generics 
 let gen = (input) => {
     let el = document.createElement(input);
     return el;
@@ -55,8 +55,8 @@ let $g = (target, type, arg, id, cname, alt, s1, s2, s3) => {
         newEl.href = alt;
         newEl.textContent = arg;
     };
-    if (type === "p" || "h1" || "h2" || "h3" || "h4" || "h5") {
-        newEl.textContent = arg;
+    if (type === "p" || "h1" || "h2" || "h3" || "h4" || "h5" || "i") {
+        newEl.innerHTML = arg;
     };
     if (type === "button") {
         newEl.onclick = alt;
@@ -87,6 +87,10 @@ let $p = (t,c,cn,id) => {
     $g(t,"p",c,id,cn);
 };
 
+let $i = (t,c,cn,id) => {
+    $g(t,"i",c,id,cn);
+}
+
 let $h = (n,t,c,cn,id) => {
     $g(t, "h"+n, c, id, cn);
 };
@@ -113,11 +117,11 @@ let $a = (t, c, ln, cn, id) => {
 
 let $sel = (t, cn, id) => {
     $g(t, "select", "", id, cn);
-}
+};
 
 let $opt = (t, c, cn, id) => {
     $g(t, "option", c, id, cn);
-}
+};
 
 let $l = (type,t,c,cn,id) => {
     if(type === "ul" || type === "ol"){
@@ -125,26 +129,30 @@ let $l = (type,t,c,cn,id) => {
     } else {
         $h(1, body, "$l error: Type is improperly configured.");
     }
-}
+};
 
 let $li = (t,c,cn,id) => {
     $g(t,"li",c,id,cn);    
-}
+};
 
 let $script = (t,c,cn,id,src) => {
     $g(t,"script",c,id,cn,src);
-} // src and content are technically optional, however not using one is... perhaps a tad pointless.
+}; // src and content are technically optional, however not using one is... perhaps a tad pointless.
 
 let $form = (t,cn,id,action,method,name) => {
     $g(t,"form","",id,cn,"",action,method,name);
-}
+};
 
 let $input = (t,c,cn,id,type,name) => {
     $g(t,"input",c,id,cn,"",type,name);
-}
+};
 
 let $b = (t,c,oc,cn,id) => {
     $g(t, "button", c, id, cn, oc);
+};
+
+let $se = (t, cn, id) => {
+    $g(t, "section", "", id, cn);
 };
 
 
