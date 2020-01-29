@@ -1,0 +1,74 @@
+#core {
+  background-color: wheat;
+  font-family: 'Public Sans', sans-serif;
+  padding: 0px;
+  margin: 0px; }
+  #core #header {
+    display: flex;
+    background-color: royalblue;
+    padding: 0px;
+    margin: 0px;
+    height: 15vh;
+    padding-top: 2vh;
+    padding-left: 2vw;
+    padding-bottom: 2vh; }
+    #core #header #logoHold {
+      display: flex; }
+      #core #header #logoHold #title {
+        padding-right: 2vw;
+        margin: 0px;
+        color: white;
+        font-family: 'Public Sans', sans-serif;
+        font-size: 3em; }
+      #core #header #logoHold #subtitle {
+        float: left;
+        color: white;
+        font-family: 'Public Sans', sans-serif;
+        font-size: 1em;
+        margin: 0px;
+        padding-top: 7vh; }
+  #core #navMenu {
+    font-family: 'Public Sans', sans-serif;
+    width: 20vw;
+    height: 100%;
+    background-color: wheat; }
+    #core #navMenu nav {
+      padding-left: 0.5vw; }
+      #core #navMenu nav .navTitle {
+        margin: 0px;
+        padding-top: 5vh;
+        padding-bottom: 5px;
+        color: black; }
+      #core #navMenu nav .navItem {
+        text-decoration: none;
+        color: black;
+        width: 100%; }
+      #core #navMenu nav hr {
+        width: 90%;
+        color: black; }
+      #core #navMenu nav .breaker {
+        width: 0.01px;
+        color: rgba(0, 0, 0, 0); }
+      #core #navMenu nav p {
+        margin: 0; }
+  #core #bodyInt {
+    display: flex; }
+    #core #bodyInt #content {
+      background-color: #f7f9ff;
+      width: 100%;
+      padding: 10px; }
+      #core #bodyInt #content #postBox {
+        width: 100%; }
+        #core #bodyInt #content #postBox .postDiv {
+          float: left;
+          background-color: wheat;
+          padding: 10px;
+          margin: 1vw;
+          border-radius: 10px;
+          border-bottom-right-radius: 0px; }
+          #core #bodyInt #content #postBox .postDiv p {
+            margin: 0px; }
+          #core #bodyInt #content #postBox .postDiv h4 {
+            margin: 0; }
+          #core #bodyInt #content #postBox .postDiv h6 {
+            margin: 0; }

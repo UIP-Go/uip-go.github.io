@@ -1,0 +1,99 @@
+#core{
+    background-color: wheat;
+    font-family: 'Public Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    // display: flex;
+    #header{
+        display: flex;
+        background-color: royalblue;
+        padding: 0px;
+        margin: 0px;
+        height: 15vh;
+        padding-top: 2vh;
+        padding-left: 2vw;
+        padding-bottom: 2vh;
+        // width: 100vw;
+        #logoHold{
+            display: flex;
+            #title{
+                padding-right: 2vw;
+                margin: 0px;
+                color: white;
+                font-family: 'Public Sans', sans-serif;
+                font-size: 3em
+            }
+            #subtitle{
+                float: left;
+                color: white;
+                font-family: 'Public Sans', sans-serif;
+                font-size: 1em;
+                margin: 0px;
+                padding-top: 7vh;
+            }
+        }
+    }
+    #navMenu{
+        font-family: 'Public Sans', sans-serif;
+        width: 20vw;
+        height: 100%;
+        background-color: wheat;
+        nav{
+            padding-left: 0.5vw;
+            // display: inline;
+            .navTitle{
+                margin: 0px;
+                padding-top: 5vh;
+                padding-bottom: 5px;
+                color: black;
+            }
+            .navItem{
+                text-decoration: none;
+                color: black;
+                width: 100%;
+            }
+            hr{
+                width: 90%;
+                color: black;
+            }
+            .breaker{
+                width: 0.01px;
+                color: rgba($color: #00000000, $alpha: 0);
+            }
+            p{
+                margin: 0;
+            }
+        }
+    }
+    #bodyInt{
+        display: flex;
+        #content{
+            background-color: rgb(247, 249, 255);
+            width: 100%;
+            // margin: 10px;
+            padding: 10px;
+            #postBox{
+                width: 100%;
+                .postDiv{
+                    // width: 100%;
+                    float: left;
+                    background-color: wheat;
+                    padding: 10px;
+                    margin: 1vw;
+                    border-radius: 10px;
+                    border-bottom-right-radius: 0px;
+                    p{
+                        margin: 0px;
+                    }
+                    h4{
+                        margin: 0;
+                    }
+                    h6{
+                        margin:0;
+                    }
+                }
+            }
+        }
+
+    }
+}
